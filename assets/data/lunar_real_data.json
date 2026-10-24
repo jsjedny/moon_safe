@@ -1,0 +1,396 @@
+{
+  "project": "MoonSafe",
+  "data_source": "NASA Lunar Reconnaissance Orbiter (LRO), LOLA Altimeter DEMs, LROC NAC Imagery, LEND Neutron Spectrometer, Diviner Radiometer, LCROSS Impact Results",
+  "data_references": [
+    "Mazarico et al. (2011) – LOLA Illumination Modeling, Icarus 211",
+    "Zuber et al. (2012) – LOLA Topographic Maps, Nature 486",
+    "Sanin et al. (2017) – LEND Hydrogen Mapping, Icarus 283",
+    "Colaprete et al. (2010) – LCROSS Impact Water Detection, Science 330",
+    "NASA (2022) – Artemis III Candidate Landing Regions, nasa.gov",
+    "NASA (2023) – Refined 9 Artemis III Landing Regions, nasa.gov",
+    "Gläser et al. (2018) – Illumination Analysis, Planetary & Space Science 162"
+  ],
+  "target_region": "Lunar South Pole (84°S – 90°S), Artemis Candidate Landing Regions",
+  "coordinate_datum": "Moon_IAU2000 Sphere (R = 1737.4 km), Elevation relative to 1737.4 km reference",
+  "landing_sites": [
+    {
+      "site_id": "artemis_01_shackleton_rim",
+      "name": "Shackleton Crater Rim",
+      "description": "21 km impact crater at the south pole. Rim peaks receive near-continuous sunlight while the interior holds one of the deepest PSRs with confirmed water ice signatures.",
+      "coordinates": {
+        "latitude": -89.9,
+        "longitude": 0.0,
+        "elevation_meters": 4200
+      },
+      "metrics": {
+        "slope_degrees": 8.5,
+        "sunlight_availability_percent": 89.0,
+        "hydrogen_ppm_water_ice": 185.0,
+        "earth_visibility": "Partial (Intermittent LOS)"
+      },
+      "surface_temperature_K": {
+        "max_sunlit": 205,
+        "min_shadow": 70
+      },
+      "crater_diameter_km": 21.0,
+      "psr_area_km2": 324.0,
+      "terrain_risk_factor": "Medium-High",
+      "scientific_value": "Extremely High – Proximity to shadowed water ice; PSR floor may contain billions of years of volatile record",
+      "data_instruments": [
+        "LOLA",
+        "LROC NAC",
+        "LEND",
+        "Diviner"
+      ]
+    },
+    {
+      "site_id": "artemis_02_connecting_ridge",
+      "name": "Connecting Ridge (Shackleton–De Gerlache)",
+      "description": "Elevated ridge between Shackleton and De Gerlache craters. Highest modeled illumination of any lunar surface point – up to 95.7% at 10 m mast height per Gläser et al. (2018).",
+      "coordinates": {
+        "latitude": -89.4,
+        "longitude": -40.0,
+        "elevation_meters": 4600
+      },
+      "metrics": {
+        "slope_degrees": 5.2,
+        "sunlight_availability_percent": 92.3,
+        "hydrogen_ppm_water_ice": 120.0,
+        "earth_visibility": "Good (Frequent LOS windows)"
+      },
+      "surface_temperature_K": {
+        "max_sunlit": 210,
+        "min_shadow": 90
+      },
+      "crater_diameter_km": null,
+      "psr_area_km2": null,
+      "terrain_risk_factor": "Medium",
+      "scientific_value": "Very High – Premier solar power site; adjacent to both Shackleton and De Gerlache PSRs",
+      "data_instruments": [
+        "LOLA",
+        "LROC NAC",
+        "Diviner"
+      ]
+    },
+    {
+      "site_id": "artemis_03_de_gerlache_rim_1",
+      "name": "De Gerlache Rim 1",
+      "description": "Northern rim of the heavily shadowed De Gerlache crater. Crater floor never sees sunlight and harbors high hydrogen concentrations per LEND data.",
+      "coordinates": {
+        "latitude": -88.5,
+        "longitude": -75.2,
+        "elevation_meters": 3800
+      },
+      "metrics": {
+        "slope_degrees": 6.8,
+        "sunlight_availability_percent": 78.4,
+        "hydrogen_ppm_water_ice": 240.0,
+        "earth_visibility": "Moderate"
+      },
+      "surface_temperature_K": {
+        "max_sunlit": 200,
+        "min_shadow": 55
+      },
+      "crater_diameter_km": 32.4,
+      "psr_area_km2": 458.0,
+      "terrain_risk_factor": "Medium",
+      "scientific_value": "Very High – Highest shallow ice concentration among rim sites; deep PSR volatile reservoir",
+      "data_instruments": [
+        "LOLA",
+        "LROC NAC",
+        "LEND"
+      ]
+    },
+    {
+      "site_id": "artemis_04_de_gerlache_rim_2",
+      "name": "De Gerlache Rim 2",
+      "description": "Southern elevated rim zone overlooking De Gerlache crater. Strategic access to both sun-visibility patches and adjacent polar ice reservoirs. Part of NASA's refined 9 candidate regions.",
+      "coordinates": {
+        "latitude": -88.71,
+        "longitude": -64.0,
+        "elevation_meters": 1765
+      },
+      "metrics": {
+        "slope_degrees": 7.2,
+        "sunlight_availability_percent": 74.6,
+        "hydrogen_ppm_water_ice": 220.0,
+        "earth_visibility": "Moderate"
+      },
+      "surface_temperature_K": {
+        "max_sunlit": 195,
+        "min_shadow": 50
+      },
+      "crater_diameter_km": 32.4,
+      "psr_area_km2": 458.0,
+      "terrain_risk_factor": "Medium-High",
+      "scientific_value": "High – Access to deep PSR ice; challenging but scientifically rewarding terrain",
+      "data_instruments": [
+        "LOLA",
+        "LROC NAC",
+        "LEND"
+      ]
+    },
+    {
+      "site_id": "artemis_05_de_gerlache_kocher",
+      "name": "De Gerlache-Kocher Massif",
+      "description": "Mountainous massif between De Gerlache and Kocher craters. Elevated terrain provides favorable illumination above surrounding crater floors.",
+      "coordinates": {
+        "latitude": -88.0,
+        "longitude": -80.5,
+        "elevation_meters": 3200
+      },
+      "metrics": {
+        "slope_degrees": 9.1,
+        "sunlight_availability_percent": 72.0,
+        "hydrogen_ppm_water_ice": 180.0,
+        "earth_visibility": "Partial"
+      },
+      "surface_temperature_K": {
+        "max_sunlit": 198,
+        "min_shadow": 60
+      },
+      "crater_diameter_km": null,
+      "psr_area_km2": null,
+      "terrain_risk_factor": "High",
+      "scientific_value": "High – Massive geological diversity; ancient SPA basin material exposed",
+      "data_instruments": [
+        "LOLA",
+        "LROC WAC"
+      ]
+    },
+    {
+      "site_id": "artemis_06_malapert_massif",
+      "name": "Malapert Massif",
+      "description": "Prominent mountain ridge at ~86°S. Excellent direct line-of-sight to Earth for communication relay. One of NASA's refined 9 Artemis III candidate regions.",
+      "coordinates": {
+        "latitude": -86.0,
+        "longitude": 2.7,
+        "elevation_meters": 5000
+      },
+      "metrics": {
+        "slope_degrees": 4.1,
+        "sunlight_availability_percent": 86.0,
+        "hydrogen_ppm_water_ice": 30.0,
+        "earth_visibility": "Excellent (Continuous Earth LOS)"
+      },
+      "surface_temperature_K": {
+        "max_sunlit": 215,
+        "min_shadow": 95
+      },
+      "crater_diameter_km": null,
+      "psr_area_km2": 12.0,
+      "terrain_risk_factor": "Low",
+      "scientific_value": "High – Ideal communication relay; best Earth-facing site for permanent infrastructure",
+      "data_instruments": [
+        "LOLA",
+        "LROC NAC",
+        "Diviner"
+      ]
+    },
+    {
+      "site_id": "artemis_07_nobile_rim_1",
+      "name": "Nobile Rim 1",
+      "description": "Western rim of Nobile crater at ~85.3°S. One of NASA's refined 9 Artemis III candidate regions. Relatively smooth highland terrain suitable for rover traverses.",
+      "coordinates": {
+        "latitude": -85.3,
+        "longitude": 31.5,
+        "elevation_meters": 2500
+      },
+      "metrics": {
+        "slope_degrees": 3.8,
+        "sunlight_availability_percent": 68.0,
+        "hydrogen_ppm_water_ice": 150.0,
+        "earth_visibility": "Good"
+      },
+      "surface_temperature_K": {
+        "max_sunlit": 200,
+        "min_shadow": 80
+      },
+      "crater_diameter_km": 73.0,
+      "psr_area_km2": 180.0,
+      "terrain_risk_factor": "Low",
+      "scientific_value": "Very High – VIPER rover target region; smooth terrain with accessible volatile deposits",
+      "data_instruments": [
+        "LOLA",
+        "LROC NAC",
+        "LEND",
+        "Mini-RF"
+      ]
+    },
+    {
+      "site_id": "artemis_08_nobile_rim_2",
+      "name": "Nobile Rim 2",
+      "description": "Eastern rim of Nobile crater. Analyzed via GIS-MCDM algorithms as an optimal site balancing safety, sunlight, and volatile access. Part of NASA's refined 9 candidate regions.",
+      "coordinates": {
+        "latitude": -84.2,
+        "longitude": 60.7,
+        "elevation_meters": 2900
+      },
+      "metrics": {
+        "slope_degrees": 3.2,
+        "sunlight_availability_percent": 65.5,
+        "hydrogen_ppm_water_ice": 145.0,
+        "earth_visibility": "Good"
+      },
+      "surface_temperature_K": {
+        "max_sunlit": 205,
+        "min_shadow": 85
+      },
+      "crater_diameter_km": 73.0,
+      "psr_area_km2": 180.0,
+      "terrain_risk_factor": "Low",
+      "scientific_value": "High – Geologically diverse rim; optimal rover access to crater floor volatiles",
+      "data_instruments": [
+        "LOLA",
+        "LROC NAC",
+        "LEND"
+      ]
+    },
+    {
+      "site_id": "artemis_09_faustini_rim_a",
+      "name": "Faustini Rim A",
+      "description": "Rim of the ancient, heavily degraded Faustini crater. Interior PSR is one of the coldest measured surfaces on the Moon (as low as 25 K per Diviner). Extensive hydrogen enrichment.",
+      "coordinates": {
+        "latitude": -87.3,
+        "longitude": 84.1,
+        "elevation_meters": 3400
+      },
+      "metrics": {
+        "slope_degrees": 5.5,
+        "sunlight_availability_percent": 81.2,
+        "hydrogen_ppm_water_ice": 195.0,
+        "earth_visibility": "Moderate-Good"
+      },
+      "surface_temperature_K": {
+        "max_sunlit": 195,
+        "min_shadow": 25
+      },
+      "crater_diameter_km": 39.0,
+      "psr_area_km2": 694.0,
+      "terrain_risk_factor": "Medium",
+      "scientific_value": "High – One of the coldest PSRs; extremely stable ice environment; large volatile floor area",
+      "data_instruments": [
+        "LOLA",
+        "LROC NAC",
+        "LEND",
+        "Diviner"
+      ]
+    },
+    {
+      "site_id": "artemis_10_haworth",
+      "name": "Haworth Crater Rim",
+      "description": "Large crater adjacent to Shackleton. Interior PSR sustains ultra-cold temperatures. Part of NASA's refined 9 Artemis III candidate regions.",
+      "coordinates": {
+        "latitude": -87.4,
+        "longitude": -23.7,
+        "elevation_meters": -4528
+      },
+      "metrics": {
+        "slope_degrees": 7.8,
+        "sunlight_availability_percent": 60.5,
+        "hydrogen_ppm_water_ice": 210.0,
+        "earth_visibility": "Moderate"
+      },
+      "surface_temperature_K": {
+        "max_sunlit": 190,
+        "min_shadow": 38
+      },
+      "crater_diameter_km": 51.4,
+      "psr_area_km2": 820.0,
+      "terrain_risk_factor": "Medium-High",
+      "scientific_value": "Very High – Massive PSR area; strong neutron suppression indicates deep ice reserves",
+      "data_instruments": [
+        "LOLA",
+        "LEND",
+        "Diviner"
+      ]
+    },
+    {
+      "site_id": "artemis_11_mons_mouton",
+      "name": "Mons Mouton Plateau",
+      "description": "Broad flat-topped plateau near the south pole. Unusually smooth for the polar region. Part of NASA's refined 9 Artemis III candidate regions.",
+      "coordinates": {
+        "latitude": -84.8,
+        "longitude": -27.5,
+        "elevation_meters": 2100
+      },
+      "metrics": {
+        "slope_degrees": 2.5,
+        "sunlight_availability_percent": 70.0,
+        "hydrogen_ppm_water_ice": 80.0,
+        "earth_visibility": "Good"
+      },
+      "surface_temperature_K": {
+        "max_sunlit": 210,
+        "min_shadow": 95
+      },
+      "crater_diameter_km": null,
+      "psr_area_km2": 45.0,
+      "terrain_risk_factor": "Low",
+      "scientific_value": "Moderate – Safest terrain; ideal for first crewed landing; limited but accessible volatiles nearby",
+      "data_instruments": [
+        "LOLA",
+        "LROC WAC"
+      ]
+    },
+    {
+      "site_id": "artemis_12_leibnitz_beta",
+      "name": "Leibnitz Beta Plateau",
+      "description": "Elevated plateau on the SPA basin rim. Among the original 13 Artemis candidate regions. Ancient crustal material exposed by basin-forming impact.",
+      "coordinates": {
+        "latitude": -85.0,
+        "longitude": -35.0,
+        "elevation_meters": 4100
+      },
+      "metrics": {
+        "slope_degrees": 6.2,
+        "sunlight_availability_percent": 75.0,
+        "hydrogen_ppm_water_ice": 100.0,
+        "earth_visibility": "Moderate"
+      },
+      "surface_temperature_K": {
+        "max_sunlit": 200,
+        "min_shadow": 75
+      },
+      "crater_diameter_km": null,
+      "psr_area_km2": 90.0,
+      "terrain_risk_factor": "Medium",
+      "scientific_value": "High – SPA basin rim geology; crustal stratigraphy exposed; ancient impact melt samples",
+      "data_instruments": [
+        "LOLA",
+        "LROC WAC",
+        "Diviner"
+      ]
+    },
+    {
+      "site_id": "artemis_13_peak_near_cabeus_b",
+      "name": "Peak near Cabeus B",
+      "description": "Elevated peak adjacent to Cabeus crater, where LCROSS confirmed 5.6% water ice by mass in 2009. Part of NASA's refined 9 Artemis III candidate regions.",
+      "coordinates": {
+        "latitude": -84.9,
+        "longitude": -44.0,
+        "elevation_meters": 3600
+      },
+      "metrics": {
+        "slope_degrees": 5.8,
+        "sunlight_availability_percent": 72.5,
+        "hydrogen_ppm_water_ice": 250.0,
+        "earth_visibility": "Moderate-Good"
+      },
+      "surface_temperature_K": {
+        "max_sunlit": 195,
+        "min_shadow": 40
+      },
+      "crater_diameter_km": 98.0,
+      "psr_area_km2": 1200.0,
+      "terrain_risk_factor": "Medium",
+      "scientific_value": "Extremely High – LCROSS ground-truth site; confirmed 5.6 wt% water ice; highest confidence volatile deposit",
+      "data_instruments": [
+        "LOLA",
+        "LROC NAC",
+        "LEND",
+        "LCROSS"
+      ]
+    }
+  ]
+}
